@@ -1,0 +1,254 @@
+body{
+    background-color:#668199;
+    color: black;
+    font-family: 'Roboto' , sans-serif;
+} 
+
+
+.contenedor .menu {
+    color: rgb(85, 60, 14);
+    font-size: 2em;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 10px;
+    
+    display:flex;
+    height: 50%;
+    
+    text-align: center;
+    padding:16px 16px; 
+    list-style-type: none;
+    margin: 20px;
+    flex-direction: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+
+.contenedor > div
+.contenedor .header, 
+.contenedor .formulario,
+.contenedor .contenido{
+    background: hsl(110, 3%, 43%);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+
+.contenedor .header{
+    background: #12203e;
+    color: #fff;
+    grid-area: header;
+}
+
+
+.contenedor .formulario{
+    grid-area: contenido;
+    background: #55a8fd;
+    color: #fff;
+    height: 100px;
+    text-align: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.contenedor .contenido{
+    grid-column: 3 / 4;
+    background: #faa43d;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+
+    grid-area: movimientos;
+}
+
+a{
+    color: rgb(85, 60, 14)
+}
+
+
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0;
+
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4,auto);
+
+}
+
+
+.contenedor .header{
+    background: #12203e;
+    color: #fff;
+    grid-area: header;
+}
+
+.contenedor .formulario{
+    grid-area: formulario;
+}
+
+
+h1{
+    color: #85504e;
+    font-size: 5em;
+    font-weight: 600;
+    font-family: 'Jost', sans-serif;
+   
+}
+
+h2{
+    color: rgb(202, 187, 104);
+    font-size: 3em;
+    font-weight: 700;
+    font-family: 'Josefin Slab', serif;}
+
+ul{
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+p{
+font-size: 1em;
+font-family: 'Roboto', sans-serif;
+}
+
+a{
+    color: rgb(85, 60, 14);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+   
+}
+ul li{
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;   
+    display: inline;
+    margin: 20px;
+}
+
+h3{
+    color: rgb(145, 97, 190);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+}
+tbody tr{
+    color: azure;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: 'Josefin Slab', serif;}
+h4{
+    color: rgb(145, 97, 190);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:769px){
+    .contenedor { 
+        grid-template-areas: "header header header"
+        "contenido contenido contenido"
+        "formulario formulario formulario"
+        ;
+    }
+    
+
+    a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    }
+
+
+
+  
+    h1{
+        color: rgb(202, 187, 104);
+        font-size: 5em;
+        font-weight: 600;
+        font-family: 'Jost', sans-serif;
+    }
+    
+    /* h2{
+        color: rgb(202, 187, 104);
+        font-size: 3em;
+        font-weight: 700;
+        font-family: 'Josefin Slab', serif;} */
+    
+    ul{
+        list-style: none;
+        font-family: 'Roboto', sans-serif;
+    }
+    p{
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    }
+  
+    a{
+        color: rgb(85, 60, 14);
+        font-family: 'Roboto', sans-serif;
+        font-size: 2em;
+        font-weight: 700;
+       
+    }
+    ul li{
+        list-style-type: none;
+        font-family: 'Roboto', sans-serif;   
+        display: inline;
+        margin: 20px;
+    }
+    
+    h3{
+        color: rgb(145, 97, 190);
+        font-family: 'Roboto', sans-serif;
+        font-size: 2em;
+    }
+    tbody tr{
+        color: azure;
+        font-size: 1em;
+        font-weight: 700;
+        font-family: 'Josefin Slab', serif;}
+    h4{
+        color: rgb(145, 97, 190);
+        font-family: 'Roboto', sans-serif;
+        font-size: 2em;
+    }
+    
+    
+    
+    
+   

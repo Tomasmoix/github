@@ -1,0 +1,144 @@
+body{
+    background-color:#668199;
+    color: black;
+    font-family: 'Roboto' , sans-serif;
+    margin: 0%;
+}
+
+
+.contenedor .menu {
+    color: rgb(146, 135, 115);
+    font-size: 2em;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 10px;
+    
+    display:flex;
+    height: 50%;
+    margin-right: 20px;
+    
+    text-align: center;
+    padding:16px 16px; 
+    list-style-type: none;
+    margin: 20px;
+    flex-direction: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-area: menu;
+
+}
+
+a{
+    color: rgb(85, 60, 14)
+}
+
+div{
+    border: #550e3a;
+    border: solid
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.contenedor{
+    width: 90%;
+    /* width: 1000px; */
+    margin: 20px auto;
+    
+    display: flex;
+
+    display: grid;
+    grid-gap: 20px;  
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4,auto); 
+
+    grid-template-areas: "header header header"
+                        "contenido contenido movimientos"
+                        "herramientas-1 herramientas-2 movimientos"
+                        "footer footer footer";
+
+} 
+
+.contenedor > div
+.contenedor .header, 
+.contenedor .contenido,
+.contenedor .movimientos, 
+.contenedor .footer,
+.contenedor .herramientas-1
+.contenedor .herramientas-2{
+
+    background: #51a849;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+
+.contenedor .header{
+    background: #12203e;
+    color: #fff;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.contenedor .contenido{
+    grid-area: contenido;
+   
+}
+
+.contenedor .movimientos{
+    grid-column: 3 / 4;
+    background: #faa43d;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+
+    grid-area: movimientos;
+
+}
+
+.contenedor .herramientas-2,
+.contenedor .herramientas-1{
+    /* background: #55a8fd; */
+    color: #fff;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .herramientas-1{
+    grid-area: herramientas-1;
+}
+
+.contenedor .herramientas-2{
+    grid-area: herramientas-2;
+}
+
+.contenedor .footer{
+    background: #12203e;
+    color: #fff;
+    grid-area: footer;
+
+}
+
+
+@media screen and (max-width:769px){
+    .contenedor { 
+        grid-template-areas: "header header header"
+        "contenido contenido contenido"
+        "movimientos movimientos movimientos"
+        "herramientas-1 herramientas-1 herramientas-2"
+        "footer footer footer";
+    }
+    }
